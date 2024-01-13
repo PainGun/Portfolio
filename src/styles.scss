@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+// Definición de las variables de colores
+$color-primario: #8A2BE2;
+$color-fondo: #FFFFFF;
+$color-texto: #000000;
+
+// Estilo de fondo global
+body {
+  background-color: $color-fondo;
+}
+
+// Estilo de texto global
+* {
+  color: $color-texto;
+}
+
+// Estilo para los botones
+.button {
+  background-color: #000000;
+  color: $color-primario;
+  border: 2px solid $color-primario;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  &:hover {
+    background-color: $color-primario;
+    color: #000000;
+  }
+}
+
+// Estilo para componentes que usan el color primario
+.accent-component {
+  color: $color-primario;
+}
